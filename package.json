@@ -1,11 +1,14 @@
 {
+  "homepage": "https://phun0024.github.io/test3",
   "name": "test3",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "vite build --base=/test3/",
     "preview": "vite preview"
   },
   "dependencies": {
